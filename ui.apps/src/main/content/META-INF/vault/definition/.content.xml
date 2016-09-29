@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:vlt="http://www.day.com/jcr/vault/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:description="AEM Assets Project Package"
+    jcr:primaryType="vlt:PackageDefinition"
+    sling:resourceType="cq/packaging/components/pack/definition"
+    buildCount="1"
+    cqVersion="6.2"
+    group="aem-assets"
+    name="aem-assets"
+    path="/etc/packages/aem-assets/aem-assets-0.0.1-SNAPSHOT"
+    version="0.0.1-SNAPSHOT">
+    <filter jcr:primaryType="nt:unstructured">
+        <f0
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/apps/aem-assets-project"
+            rules="[]"/>
+
+
+        <f2
+            jcr:primaryType="nt:unstructured"
+            mode="replace"
+            root="/etc/clientlibs/aem-assets-project"
+            rules="[]"/>
+
+    </filter>
+</jcr:root>

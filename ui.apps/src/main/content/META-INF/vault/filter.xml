@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/apps/aem-assets-project"/>
+
+
+    <filter root="/etc/clientlibs/aem-assets-project"/>
+
+
+    <filter root="/etc/designs/aem-assets-project">
+        <include pattern="/etc/designs/aem-assets-project/jcr:content"/>
+
+        <include pattern="/etc/designs/aem-assets-project/jcr:content/clientlibs"/>
+        <include pattern="/etc/designs/aem-assets-project/jcr:content/clientlibs/.*"/>
+
+    </filter>
+
+</workspaceFilter>
