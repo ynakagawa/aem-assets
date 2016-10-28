@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <workspaceFilter version="1.0">
     <filter root="/apps/aem-assets-project"/>
+    <filter root="/apps/cq"/>
+    <filter root="/apps/dam"/>
+    <filter root="/apps/sling"/>
 
 
     <filter root="/etc/clientlibs/aem-assets-project"/>

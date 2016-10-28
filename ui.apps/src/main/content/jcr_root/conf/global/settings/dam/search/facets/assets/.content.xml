@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        jcr:primaryType="nt:unstructured"
+        jcr:title="Assets Admin Search Rail"
+        sling:resourceType="granite/ui/components/foundation/contsys"
+        maxGeneratedOrder="21"
+        predicatesConfig="/mnt/overlay/settings/dam/search/facets/formbuilderconfig/predicatetypes">
+        <items jcr:primaryType="nt:unstructured">
+            <fulltext
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/fulltextpredicate"
+                emptyText="Enter Keyword(s)"
+                fieldLabel="Fulltext Predicate"
+                listOrder="1"
+                maxlength="255"
+                metaType="fulltext"
+                minlength="0"/>
+            <pathbrowser
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/pathbrowserpredicate"
+                emptyText="Select Search Directory"
+                fieldLabel="Path Browser"
+                listOrder="2"
+                metaType="pathbrowser"
+                rootPath="/content/dam"/>
+            <_x0031_476140358057
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/propertypredicate"
+                fieldLabel="Property Predicate"
+                listOrder="20"
+                metaType="property"
+                name="jcr:content/metadata/grainger:item_number"
+                text="Item#"
+                title="What is the Item#"/>
+            <_x0031_476140800105
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                emptyText="Brand"
+                fieldLabel="Tags"
+                listOrder="21"
+                metaType="tags"
+                name="jcr:content/metadata/grainger:brand"
+                rootPath="/etc/tags/brands"/>
+            <mimetype
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="3"
+                metaType="listoptions"
+                name="jcr:content/metadata/dc:format"
+                optionPaths="/libs/dam/content/predicates/mimetypes"
+                text="File Type"
+                value="true"/>
+            <filesize
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicate"
+                listOrder="4"
+                metaType="filesize"
+                name="jcr:content/metadata/dam:size"
+                optionPaths="[/libs/dam/options/predicates/filesize]"
+                text="File Size"/>
+            <assetlastmodified
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/assetlastmodifiedpredicate"
+                listOrder="5"
+                metaType="assetlastmodified"
+                name="jcr:content/jcr:lastModified"
+                text="Last Modified"
+                value="true"/>
+            <publish
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/publishpredicate"
+                listOrder="6"
+                metaType="publish"
+                name="jcr:content/cq:lastReplicationAction"
+                optionPaths="/libs/dam/options/predicates/publish"
+                text="Publish Status"
+                value="true"/>
+            <status
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="7"
+                metaType="listoptions"
+                name="jcr:content/metadata/dam:status"
+                optionPaths="/libs/dam/options/predicates/status"
+                singleSelect="{Boolean}true"
+                text="Approval Status"
+                value="true"/>
+            <expirystatus
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/expiredassetpredicate"
+                listOrder="8"
+                metaType="expirystatus"
+                name="jcr:content/metadata/prism:expirationDate"
+                text="Expiry Status"
+                value="true"/>
+            <metadatavalidity
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="9"
+                metaType="listoptions"
+                name="jcr:content/hasValidMetadata"
+                optionPaths="/libs/dam/options/predicates/metadatavalidity"
+                text="Metadata Validation"
+                value="true"/>
+            <rating
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/sliderangepredicate"
+                listOrder="10"
+                metaType="rating"
+                name="jcr:content/averageRating"
+                optionPaths="[/libs/dam/options/predicates/rating]"
+                text="Average Rating"/>
+            <orientation
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                emptyText="Orientation"
+                fieldLabel="Orientation"
+                listOrder="11"
+                metaType="tags"
+                name="jcr:content/metadata/cq:tags"
+                rootPath="/etc/tags/properties/orientation"/>
+            <style
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="cq/gui/components/coral/common/admin/customsearch/searchpredicates/tagspredicate"
+                emptyText="Style"
+                fieldLabel="Style"
+                listOrder="12"
+                metaType="tags"
+                name="jcr:content/metadata/cq:tags"
+                rootPath="/etc/tags/properties/style"/>
+            <insights
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="18"
+                metaType="listoptions"
+                name="jcr:content/usages/usedBy"
+                optionPaths="/libs/dam/options/predicates/solutions"
+                text="Insights"
+                value="true"/>
+            <videoFormat
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/optionspredicate"
+                listOrder="13"
+                metaType="listoptions"
+                name="*/*/*/jcr:content/jcr:mimeType"
+                optionPaths="/libs/dam/options/predicates/mimetypes/multimedia/video"
+                text="Video Format"
+                value="true"/>
+            <mainasset
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                listOrder="14"
+                metaType="hidden"
+                name="mainasset"
+                value="true"/>
+            <usagescore
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/rangepredicate"
+                fieldLabel="Range Predicate"
+                listOrder="15"
+                metaType="range"
+                name="jcr:content/usages/dam:score"
+                text="Usage Score"/>
+            <impressionscore
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/rangepredicate"
+                fieldLabel="Range Predicate"
+                listOrder="16"
+                metaType="range"
+                name="jcr:content/performance/dam:impressionCount"
+                text="Impression Score"/>
+            <clickscore
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="dam/gui/coral/components/admin/customsearch/searchpredicates/rangepredicate"
+                fieldLabel="Range Predicate"
+                listOrder="17"
+                metaType="range"
+                name="jcr:content/performance/dam:clickCount"
+                text="Click Score"/>
+            <type
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/foundation/form/hidden"
+                metaType="hidden"
+                name="type"
+                value="dam:Asset"/>
+        </items>
+    </jcr:content>
+</jcr:root>
