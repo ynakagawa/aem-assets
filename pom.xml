@@ -22,11 +22,11 @@
     <!-- P R O P E R T I E S -->
     <!-- ====================================================================== -->
     <properties>
-        <crx.host>localhost</crx.host>
+        <crx.host>sj1010005168134.corp.adobe.com</crx.host>
         <crx.port>4502</crx.port>
         <crx.username>admin</crx.username>
         <crx.password>admin</crx.password>
-        <publish.crx.host>localhost</publish.crx.host>
+        <publish.crx.host>sj1010005168134.corp.adobe.com</publish.crx.host>
         <publish.crx.port>4503</publish.crx.port>
         <publish.crx.username>admin</publish.crx.username>
         <publish.crx.password>admin</publish.crx.password>
@@ -135,9 +135,10 @@
             <dependency>
                 <groupId>com.adobe.aem</groupId>
                 <artifactId>uber-jar</artifactId>
-                <version>6.2.0</version>
-                <scope>provided</scope>
+                <version>6.3.0</version>
+                <scope>system</scope>
                 <classifier>apis</classifier>
+                <systemPath>${project.basedir}/src/main/resources/cq-quickstart-6.3.0-load21b-apis.jar</systemPath>
             </dependency>
             <dependency>
                 <groupId>org.slf4j</groupId>
